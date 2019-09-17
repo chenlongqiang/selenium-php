@@ -14,7 +14,7 @@ class RedisService
     public static function getInstance($dsn = '')
     {
         if ($dsn === '') {
-            $dsn = 'tcp://127.0.0.1:6379';
+            $dsn = env('REDIS_DSN');
         }
         return new Client($dsn);
     }

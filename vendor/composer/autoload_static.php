@@ -84,22 +84,11 @@ class ComposerStaticInitc6e7a62c38770d328d440aeb623258dd
         ),
     );
 
-    public static $prefixesPsr0 = array (
-        'P' => 
-        array (
-            'PhpOption\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/phpoption/phpoption/src',
-            ),
-        ),
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitc6e7a62c38770d328d440aeb623258dd::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitc6e7a62c38770d328d440aeb623258dd::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitc6e7a62c38770d328d440aeb623258dd::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
