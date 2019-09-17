@@ -1,0 +1,18 @@
+User-agent:*
+Disallow: /contract/
+Disallow: /global/
+Disallow: /webapi/
+Disallow: /main/
+Disallow: /*?* #!!! 这条规则限制，不允许爬取带问号
+Disallow: /api/payorder-task-*.html
+Disallow: /payorder
+Disallow: /works/view-wid-*.html
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /api
+Disallow: /pub/
+Disallow: /api/
+Disallow: /ajax/
+Disallow: /buy/
+Disallow: /*/page1.html #!!! 这条规则限制，不允许爬第1页
+Disallow: /*/p1.html
