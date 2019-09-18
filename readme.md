@@ -1,6 +1,6 @@
 # selenium-php 使用 php 驱动 selenium 爬虫，手摸手教学
 
-## tips
+## tips！
 `本项目以采集 猪八戒任务 为例仅用于学习交流，采集前请阅读 robots.txt 协议`
 
 `禁止用于非法行为，后果自付`
