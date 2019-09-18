@@ -29,3 +29,15 @@ https://www.seleniumhq.org/download/
 
 ### ps windows 如何设置环境变量
 https://www.java.com/zh_CN/download/help/path.xml
+
+## 使用流程
+1.安装好运行环境及依赖，并启动
+2.创建数据库，导入数据表 sql
+mysql -u username -ppassword create database selenium-php character set utf8 collate utf8_general_ci;
+mysql -u username -ppassword selenium-php < zhubajie.sql
+3.配置 .env，redis mysql
+4.cd selenium-php
+5.采集列表页（爬取页码当前写死2~5页）php scripts/zhubajie/spider_list.php >> ./log/spider_list.log 2>&1
+6.列表页采集完成后，将任务丢进 redis 队列（方便详情页多进程爬取）php scripts/zhuabajie/get_db_id_to_redis.php
+7.采集详情页 php scripts/zhuabajie/spider_detail.php >> ./log/spider_detail.log 2>&1
+
