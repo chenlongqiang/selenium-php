@@ -38,6 +38,6 @@ mysql -u username -ppassword selenium-php < zhubajie.sql
 3.配置 .env，redis mysql
 4.cd selenium-php
 5.采集列表页（爬取页码当前写死2~5页）php scripts/zhubajie/spider_list.php >> ./log/spider_list.log 2>&1
-6.列表页采集完成后，将任务丢进 redis 队列（方便详情页多进程爬取）php scripts/zhuabajie/get_db_id_to_redis.php
+6.列表页采集完成后，将任务丢进 redis 队列（方便详情页多进程采集）php scripts/zhuabajie/get_db_id_to_redis.php
 7.采集详情页 php scripts/zhuabajie/spider_detail.php >> ./log/spider_detail.log 2>&1
 
