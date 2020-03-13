@@ -1,4 +1,4 @@
-# 使用 php 驱动 selenium 进行数据采集，手摸手教学
+# 使用 php 配合 selenium 进行数据采集，手摸手教学
 
 ## tips！
 `本项目以采集 猪八戒任务 为例仅用于学习交流，采集前请阅读 robots.txt 协议`
@@ -14,7 +14,7 @@
 链接：https://pan.baidu.com/s/1gbSckvixLMbW5JB3eaY6dQ
 提取码：29qb
 
-## 要自己选择依赖包的其它版本，可以参考以下链接  
+## 如不使用网盘，依赖包下载链接如下 
 
 ### 依赖1: java jdk8 download
 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
