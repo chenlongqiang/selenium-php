@@ -36,8 +36,8 @@ https://www.java.com/zh_CN/download/help/path.xml
 ## 使用流程
 - 安装好运行环境及依赖，并启动  
 - 创建数据库，导入数据表 sql  
-mysql -u username -ppassword create database selenium-php character set utf8 collate utf8_general_ci;  
-mysql -u username -ppassword selenium-php < zhubajie.sql  
+mysql -u username -ppassword -e "create database selenium_php character set utf8 collate utf8_general_ci"
+mysql -u username -ppassword selenium_php < zhubajie.sql  
 - 配置 .env，redis mysql  
 - cd selenium-php  
 - java -jar selenium-server-standalone-3.141.59.jar  
