@@ -19,6 +19,7 @@ it综合服务|https://task.zbj.com/t-jsfwzbj/pageNUM.html
 $first_category = 'wzkf';
 $zhubajie = new \App\Model\SpiderZhuBaJie();
 $zhubajie->setDriver();
+// exit; // test open webdriver
 foreach (range(2, 5) as $page) {
     $zhubajie->taskList($first_category, $page);
 

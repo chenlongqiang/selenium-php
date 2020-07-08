@@ -36,8 +36,9 @@ class SpiderZhuBaJie
     public function setDriver()
     {
         $options = new ChromeOptions();
-//        $options->addArguments(["--headless", "--disable-gpu", "--no-sandbox"]);
-        $options->addArguments(["--disable-gpu", "--no-sandbox"]);
+        // --headless
+        $options->addArguments(["--disable-gpu", "--no-sandbox", "--disable-infobars"]);
+        //$options->setExperimentalOption('excludeSwitches', ['enable-automation']); // 去除 Chrome 正受到自动测试软件的控制
 
         $capabilities = DesiredCapabilities::chrome();
         $capabilities->setCapability(ChromeOptions::CAPABILITY, $options);

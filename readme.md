@@ -30,9 +30,6 @@ https://chromedriver.storage.googleapis.com/index.html
 ### 依赖4: selenium server download
 https://www.seleniumhq.org/download/
 
-## ps windows 如何设置环境变量
-https://www.java.com/zh_CN/download/help/path.xml
-
 ## 使用流程
 - 安装好运行环境及依赖，并启动  
 - 创建数据库，导入数据表 sql  
@@ -45,3 +42,8 @@ mysql -u username -ppassword selenium_php < zhubajie.sql
 - 列表页采集完成后，将任务丢进 redis 队列（方便详情页多进程采集）php scripts/zhuabajie/get_db_id_to_redis.php  
 - 采集详情页 php scripts/zhuabajie/spider_detail.php >> ./log/spider_detail.log 2>&1  
 
+## FAQ
+### 因为无法验证开发者
+sudo spctl --master-disable
+### windows 如何设置环境变量
+https://www.java.com/zh_CN/download/help/path.xml
