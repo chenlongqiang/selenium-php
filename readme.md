@@ -27,7 +27,7 @@ https://chromedriver.storage.googleapis.com/index.html?path=72.0.3626.69/
 download other version:  
 https://chromedriver.storage.googleapis.com/index.html  
 
-### 依赖4: selenium server download
+### 依赖4: selenium server download, version: selenium-server-standalone-3.141.59
 https://www.seleniumhq.org/download/
 
 ## 使用流程
